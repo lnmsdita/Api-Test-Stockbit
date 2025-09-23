@@ -15,8 +15,6 @@ import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInC
  */
 public class Client 
 {
-    
-    
     public ApiResponse<Company> getResponseCompanies(int quantity) {
         return RestAssured.given()
         .baseUri("https://fakerapi.it")
