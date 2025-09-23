@@ -13,6 +13,9 @@ import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInC
  */
 public class Client 
 {
+    /**
+     * get Response companies
+     */
     public ApiResponse<Company> getResponseCompanies(int quantity) {
         return RestAssured.given()
         .baseUri("https://fakerapi.it")
@@ -27,6 +30,9 @@ public class Client
                 .as(new TypeRef<ApiResponse<Company>>() {});
     }
 
+    /**
+     * get Response to schema
+     */
     public void getResponseToSchema(int quantity, String schemaPath) {
         RestAssured.given()
         .baseUri("https://fakerapi.it")
