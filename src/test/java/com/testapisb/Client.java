@@ -8,8 +8,6 @@ import io.restassured.RestAssured;
 import io.restassured.common.mapper.TypeRef;
 import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 
-
-
 /**
  * Unit test for simple App.
  */
